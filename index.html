@@ -5,16 +5,18 @@
    <meta name="viewport" content="width=1024">
 
     <!-- ADDED: force desktop-like layout on mobile without changing content -->
-    <style>
-      /* Preserve exact desktop layout on mobile: keep desktop width to avoid reflow.
-         This intentionally forces a horizontal scrollbar on small screens so the page
-         appears exactly as on laptop/desktop without changing any HTML content. */
-      html, body {
-        min-width: 1024px; /* adjust if your desktop layout width differs */
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-      }
-    </style>
+ <!-- ADDED: force desktop-like layout on mobile without changing content -->
+<style>
+  /* يحافظ على مظهر سطح المكتب على الموبايل (ستظهر شريط تمرير أفقي بدلاً من إعادة ترتيب العناصر) */
+  html, body {
+    min-width: 1024px; /* يمكن تغييره لو تريد 1200px مثلاً */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    touch-action: manipulation;
+  }
+</style>
+<!-- END ADDED -->
+
     <!-- END ADDED -->
 
     <title>_tona_store_ - أجمل الشموع المصنوعة يدوياً</title>
